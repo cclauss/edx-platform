@@ -2844,10 +2844,11 @@ class TestXBlockInfo(ItemTest):
         self.assertEqual(xblock_info['default_time_limit_minutes'], 100)
         self.assertEqual(xblock_info['proctoring_provider'], test_backend)
         self.assertEqual(
-                        xblock_info['proctoring_exam_configuration_link'],
-                        reverse(
-                            'edx_proctoring:instructor_dashboard_exam', args=(course.id, 1)
-                        ))
+            xblock_info['proctoring_exam_configuration_link'],
+            reverse(
+                'edx_proctoring:instructor_dashboard_exam', args=(course.id, 1)
+            )
+        )
 
 
 class TestLibraryXBlockInfo(ModuleStoreTestCase):

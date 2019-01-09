@@ -13,7 +13,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.core.exceptions import PermissionDenied
 from django.http import Http404, HttpResponse, HttpResponseBadRequest
-from django.urls import reverse
 from django.utils.translation import ugettext as _
 from django.views.decorators.http import require_http_methods
 from opaque_keys.edx.keys import CourseKey
