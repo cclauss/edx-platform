@@ -69,7 +69,7 @@ from xmodule.modulestore.inheritance import own_metadata
 from xmodule.services import ConfigurationService, SettingsService
 from xmodule.tabs import CourseTabList
 from xmodule.x_module import DEPRECATION_VSCOMPAT_EVENT, PREVIEW_VIEWS, STUDENT_VIEW, STUDIO_VIEW
-from edx_proctoring.api import get_exam_by_content_id, get_exam_configuration_dashboard_url
+from edx_proctoring.api import get_exam_configuration_dashboard_url
 
 __all__ = [
     'orphan_handler', 'xblock_handler', 'xblock_view_handler', 'xblock_outline_handler', 'xblock_container_handler'
