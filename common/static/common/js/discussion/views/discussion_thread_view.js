@@ -317,7 +317,6 @@
                 if (options.focusAddedResponse) {
                     this.focusToTheAddedResponse(view.el);
                 }
-
                 // Typeset the response when initially loaded for any forum
                 DiscussionUtil.typesetMathJax(view.$el);
                 return view;

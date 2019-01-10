@@ -93,7 +93,6 @@ class ProblemPage(PageObject):
     def verify_mathjax_rendered_in_preview(self):
         """
         Check that MathJax has been rendered in formula problem preview
-        :return:
         """
 
         def mathjax_present():
@@ -103,7 +102,7 @@ class ProblemPage(PageObject):
 
         self.wait_for(
             mathjax_present,
-            description="MathJax rendered in problem body"
+            description="MathJax rendered in problem preview"
         )
 
     def verify_mathjax_rendered_in_hint(self):
@@ -145,7 +144,9 @@ class ProblemPage(PageObject):
 
     @property
     def get_numerical_input_value(self):
-
+        """
+        Get the numerical problem input contents
+        """
         return self.q(css='div.problem div.inputtype input').text[0]
 
     def click_submit(self):
@@ -439,7 +440,7 @@ class ProblemPage(PageObject):
 
     def get_simpleprob_correctness(self):
         """
-        Checks if a simple problem is correct or not.
+        Returns the correctness status for a simple problem.
 
         Given a simple problem, the method returns the correctness status.
         If there is no visible status, None is returned

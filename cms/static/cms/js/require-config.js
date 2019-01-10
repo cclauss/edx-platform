@@ -59,7 +59,6 @@
                     CHTMLpreview: false
                 }
             };
-
         };
 
         defineDependency('jQuery', 'jquery');

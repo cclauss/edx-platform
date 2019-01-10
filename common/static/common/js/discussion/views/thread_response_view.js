@@ -82,7 +82,6 @@
 
             ThreadResponseView.prototype.render = function() {
                 this.$el.addClass('response_' + this.model.get('id'));
-
                 edx.HtmlUtils.setHtml(this.$el, edx.HtmlUtils.HTML(this.renderTemplate()));
                 this.delegateEvents();
                 this.renderShowView();

@@ -42,7 +42,6 @@ if (typeof MathJax === 'undefined') {
             });
         };
     };
-
     // Automatic loading of Mathjax accessibility files
     window.MathJax = {
         menuSettings: {

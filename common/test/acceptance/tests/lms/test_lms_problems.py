@@ -939,17 +939,22 @@ class ProblemMetaUngradedTest(ProblemsTest):
 
 class FormulaProblemTest(ProblemsTest):
     """
-    Test Class to verify the formula problem on LMS
+    Test Class to verify the formula problem on LMS.
     """
     def setUp(self):
+        """
+        Setup the test suite to verify various behaviors involving formula problem type.
+
+        Given a course, setup a formula problem type and view it in courseware
+        Given the MathJax requirement for generating preview, wait for MathJax files to load
+        """
         super(FormulaProblemTest, self).setUp()
         self.courseware_page.visit()
-        # wait to allow most MathJax files to load
         time.sleep(4)
 
     def get_problem(self):
         """
-        Problem structure
+        creating the formula response problem, with reset button enabled.
         """
         xml = dedent("""
                     <problem>
@@ -966,7 +971,14 @@ class FormulaProblemTest(ProblemsTest):
 
     def test_reset_problem_after_incorrect_submission(self):
         """
-        Test reset button works after incorrect submission
+        Scenario: Verify that formula problem can be resetted after an incorrect submission.
+
+        Given I am attempting a formula response problem type
+        When I input an incorrect answer
+        Then the answer preview is generated using MathJax
+        When I submit the problem
+        Then I can see incorrect status and a reset button
+        When I click reset, the input pane contents get clear
         """
         problem_page = ProblemPage(self.browser)
         problem_page.fill_answer_numerical('R_1*R_2')
@@ -979,7 +991,14 @@ class FormulaProblemTest(ProblemsTest):
 
     def test_reset_button_not_rendered_after_correct_submission(self):
         """
-        Test reset button is not rendered after the correct submission
+        Scenario: Verify that formula problem can not be resetted after an incorrect submission.
+
+        Given I am attempting a formula response problem type
+        When I input a correct answer
+        Then I should be able to see the mathjax generated preview
+        When I submit the answer
+        Then the correct status is visible
+        And reset button is not rendered
         """
         problem_page = ProblemPage(self.browser)
         problem_page.fill_answer_numerical('R_1*R_2/R_3')
@@ -990,7 +1009,14 @@ class FormulaProblemTest(ProblemsTest):
 
     def test_reset_problem_after_changing_correctness(self):
         """
-        Test reset possible after changing correctness to incorrectness
+        Scenario: Verify that formula problem can be resetted after changing the correctness.
+
+        Given I am attempting a formula problem type
+        When I answer it correctly
+        Then the correctness status should be visible
+        And reset button is not rendered
+        When I change my submission to incorrect
+        Then the reset button appears and is clickable
         """
         problem_page = ProblemPage(self.browser)
         problem_page.fill_answer_numerical('R_1*R_2/R_3')
@@ -1009,18 +1035,23 @@ class FormulaProblemTest(ProblemsTest):
 @ddt.ddt
 class FormulaProblemRandomizeTest(ProblemsTest):
     """
-    Test Class to verify the formula problem on LMS with Randomization enabled
+    Test Class to verify the formula problem on LMS with Randomization enabled.
     """
 
     def setUp(self):
+        """
+        Setup the test suite to verify various behaviors involving formula problem type.
+
+        Given a course, setup a formula problem type and view it in courseware
+        Given the MathJax requirement for generating preview, wait for MathJax files to load
+        """
         super(FormulaProblemRandomizeTest, self).setUp()
         self.courseware_page.visit()
-        # wait to allow most MathJax files to load
         time.sleep(4)
 
     def get_problem(self):
         """
-        creating the formula response problem
+        creating the formula response problem.
         """
         xml = dedent("""
                     <problem>
@@ -1047,7 +1078,15 @@ class FormulaProblemRandomizeTest(ProblemsTest):
     @ddt.unpack
     def test_reset_problem_after_submission(self, input_value, correctness):
         """
-        Test reset button works after the submission
+        Scenario: Test that reset button works regardless the submission correctness status.
+
+        Given I am attempting a formula problem type with randomization:always configuration
+        When I input the answer
+        Then I should be able to see the MathJax generated preview
+        When I submit the problem
+        Then I should be able to see the reset button
+        When reset button is clicked
+        Then the input pane contents should be clear
         """
         problem_page = ProblemPage(self.browser)
         problem_page.fill_answer_numerical(input_value)
@@ -1066,7 +1105,16 @@ class FormulaProblemRandomizeTest(ProblemsTest):
     @ddt.unpack
     def test_score_reset_after_resetting_problem(self, input_value, correctness, score_before_reset, score_after_reset):
         """
-        Test score is reset after resetting the formula problem
+        Scenario: Test that score resets after the formula problem is resetted.
+
+        Given I am attempting a formula problem type with randomization:always configuration
+        When I input the answer
+        Then I should be able to see the MathJax generated preview
+        When I submit the problem
+        Then I should be able to view the score that I received
+        And The reset button should be present and is clickable
+        When the reset button is clicked
+        Then the score resets to zero
         """
         problem_page = ProblemPage(self.browser)
         problem_page.fill_answer_numerical(input_value)
@@ -1085,7 +1133,17 @@ class FormulaProblemRandomizeTest(ProblemsTest):
     @ddt.unpack
     def test_reset_correctness_after_changing_answer(self, input_value, correctness, next_input):
         """
-        Test correctness can be reset by only changing input,and not resubmitting, after initial submission.
+        Scenario: Test that formula problem can be resetted after changing the answer.
+
+        Given I am attempting a formula problem type with randomization:always configuration
+        When I input an answer
+        Then the mathjax generated preview should be visible
+        When I submit the problem, I can see the correctness status
+        When I only input another answer
+        Then the correctness status is no longer visible
+        And I am able to see the reset button
+        And when I click the reset button
+        Then input pane contents are cleared
         """
         problem_page = ProblemPage(self.browser)
         problem_page.fill_answer_numerical(input_value)
