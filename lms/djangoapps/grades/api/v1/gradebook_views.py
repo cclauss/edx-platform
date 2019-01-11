@@ -10,11 +10,12 @@ from django.urls import reverse
 from rest_framework import status
 from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from six import text_type
 from util.date_utils import to_timestamp
 
 from courseware.courses import get_course_by_id
-from lms.djangoapps.grades.api.serializers import StudentGradebookEntrySerializer
+from lms.djangoapps.grades.api.serializers import StudentGradebookEntrySerializer, SubsectionGradeResponseSerializer
 from lms.djangoapps.grades.api.v1.utils import (
     USER_MODEL,
     CourseEnrollmentPagination,
@@ -778,3 +779,35 @@ class GradebookBulkUpdateView(GradeViewMixin, PaginatedAPIView):
             subsection_grade_override,
             success
         )
+
+
+class SubsectionGradeView(GradeViewMixin, APIView):
+    """
+    Returns a gradebook override data for a subsection. You need to provide user_id or it will blow up in your face
+
+    Args:
+        user_id
+    """
+    def get(self, request, subsection_id):
+        user_id = request.GET.get('user_id')
+        usage_key = UsageKey.from_string(subsection_id)
+
+        original_grade = PersistentSubsectionGrade.read_grade(user_id, usage_key)
+
+        try:
+            override = original_grade.override
+            history = PersistentSubsectionGradeOverrideHistory.objects.filter(override_id=override.id)
+        except PersistentSubsectionGradeOverride.DoesNotExist:
+            override = None
+            history = []
+
+        results = SubsectionGradeResponseSerializer({
+            'original_grade': original_grade,
+            'override': override,
+            'history': history,
+            'subsection_id': original_grade.usage_key,
+            'user_id': original_grade.user_id,
+            'course_id': original_grade.course_id,
+        })
+
+        return Response(results.data)
