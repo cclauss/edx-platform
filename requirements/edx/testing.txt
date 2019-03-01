@@ -187,7 +187,7 @@ itsdangerous==1.1.0       # via flask
 itypes==1.1.0
 jinja2-pluralize==0.3.0
 jinja2==2.10
-jmespath==0.9.3
+jmespath==0.9.4
 jsondiff==1.1.1
 jsonfield==2.0.2
 kombu==3.0.37
