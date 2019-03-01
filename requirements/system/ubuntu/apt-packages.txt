@@ -21,7 +21,7 @@ zlib1g-dev
 libxml2-dev
 libxslt-dev
 yui-compressor
-graphviz
+graphviz==0.10.1
 libgraphviz-dev
 graphviz-dev
 mysql-server
