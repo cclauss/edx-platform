@@ -68,7 +68,7 @@ celery==4.2.1
 certifi==2018.11.29
 cffi==1.12.2
 chardet==3.0.4
-click-log==0.1.8
+click-log==0.3.2
 click==7.0
 code-annotations==0.2.4
 colorama==0.4.1
