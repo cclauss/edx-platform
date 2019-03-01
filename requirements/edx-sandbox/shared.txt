@@ -10,7 +10,7 @@
 -e common/lib/symmath
 asn1crypto==0.24.0        # via cryptography
 cffi==1.12.2              # via cryptography
-cryptography==2.5
+cryptography==2.6.1
 enum34==1.1.6             # via cryptography
 ipaddress==1.0.22         # via cryptography
 lxml==3.8.0
