@@ -344,7 +344,7 @@ uritemplate==3.0.0
 urllib3==1.24.1
 urlobject==2.4.3
 user-util==0.1.5
-virtualenv==16.4.0
+virtualenv==16.4.3
 voluptuous==0.11.5
 vulture==1.0
 w3lib==1.20.0
