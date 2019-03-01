@@ -167,7 +167,7 @@ flake8==3.7.6
 flask==1.0.2
 freezegun==0.3.11
 fs-s3fs==1.1.0
-fs==2.0.18
+fs==2.4.4
 funcsigs==1.0.2
 functools32==3.2.3.post2 ; python_version == "2.7"
 future==0.17.1
