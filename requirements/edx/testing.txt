@@ -257,7 +257,7 @@ pylint==1.7.6             # via edx-lint, pylint-celery, pylint-django
 pymongo==2.9.1
 pynliner==0.8.0
 pyopenssl==19.0.0         # via scrapy
-pyparsing==2.2.0
+pyparsing==2.3.1
 pyquery==1.4.0
 pysqlite==2.8.3
 pysrt==1.1.1
