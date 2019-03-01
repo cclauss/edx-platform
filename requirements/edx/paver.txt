@@ -9,7 +9,7 @@ certifi==2018.11.29       # via requests
 chardet==3.0.4            # via requests
 edx-opaque-keys==0.4.4
 idna==2.8                 # via requests
-lazy==1.1
+lazy==1.4
 libsass==0.10.0
 markupsafe==1.1.1
 mock==1.0.1
