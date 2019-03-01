@@ -30,7 +30,7 @@ libgeos-dev
 libreadline6
 libreadline6-dev
 mongodb
-nodejs
+nodejs==0.1.1
 mysql-client
 virtualenvwrapper
 libgeos-ruby1.8
