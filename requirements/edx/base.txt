@@ -162,7 +162,7 @@ markdown==3.0.1
 markey==0.8               # via django-babel-underscore
 markupsafe==1.1.1
 maxminddb==1.4.1          # via geoip2
-mock==1.0.1
+mock==2.0.0
 mongoengine==0.10.0
 mysql-python==1.2.5
 networkx==2.2
