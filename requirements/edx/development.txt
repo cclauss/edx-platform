@@ -209,7 +209,7 @@ mako==1.0.2
 mando==0.6.4
 markdown==3.0.1
 markey==0.8
-markupsafe==1.1.0
+markupsafe==1.1.1
 maxminddb==1.4.1
 mccabe==0.6.1
 mock==1.0.1
