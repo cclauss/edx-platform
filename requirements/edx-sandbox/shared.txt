@@ -14,7 +14,7 @@ cryptography==2.6.1
 enum34==1.1.6             # via cryptography
 ipaddress==1.0.22         # via cryptography
 lxml==4.3.2
-markupsafe==1.1.0
+markupsafe==1.1.1
 networkx==1.7
 nltk==3.4
 numpy==1.6.2
