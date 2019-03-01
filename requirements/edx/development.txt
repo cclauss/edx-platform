@@ -115,7 +115,7 @@ django-sekizai==0.10.0
 django-ses==0.8.9
 django-simple-history==2.7.0
 django-splash==0.2.2
-django-statici18n==1.4.0
+django-statici18n==1.8.2
 django-storages==1.4.1
 django-user-tasks==0.1.5
 django-waffle==0.12.0
