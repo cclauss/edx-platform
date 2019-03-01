@@ -13,7 +13,7 @@ lazy==1.4
 libsass==0.17.0
 markupsafe==1.1.1
 mock==2.0.0
-path.py==8.2.1
+path.py==11.5.0
 pathtools==0.1.2          # via watchdog
 paver==1.3.4
 pbr==5.1.2                # via stevedore
