@@ -214,7 +214,7 @@ maxminddb==1.4.1
 mccabe==0.6.1
 mock==2.0.0
 modernize==0.6.1
-mongoengine==0.10.0
+mongoengine==0.16.3
 more-itertools==5.0.0
 moto==0.3.1
 mysql-python==1.2.5
