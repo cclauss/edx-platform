@@ -158,7 +158,7 @@ execnet==1.5.0
 extras==1.0.0
 factory_boy==2.8.1
 faker==1.0.2
-feedparser==5.1.3
+feedparser==5.2.1
 filelock==3.0.10
 firebase-token-generator==1.3.2
 fixtures==3.0.0
