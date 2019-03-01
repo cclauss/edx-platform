@@ -328,7 +328,7 @@ unicodecsv==0.14.1
 unidecode==1.0.23         # via python-slugify
 unittest2==1.1.0          # via testtools
 uritemplate==3.0.0
-urllib3==1.23
+urllib3==1.24.1
 urlobject==2.4.3          # via pa11ycrawler
 user-util==0.1.5
 virtualenv==16.4.0        # via tox
