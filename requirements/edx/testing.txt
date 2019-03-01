@@ -292,7 +292,7 @@ rules==2.0.1
 s3transfer==0.1.13
 sailthru-client==2.2.3
 scandir==1.9.0            # via pathlib2
-scipy==0.14.0
+scipy==1.2.1
 scrapy==1.6.0             # via pa11ycrawler
 selenium==3.141.0
 semantic-version==2.6.0
