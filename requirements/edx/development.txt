@@ -150,7 +150,7 @@ edx-sphinx-theme==1.4.0
 edx-submissions==2.1.1
 edx-user-state-client==1.0.4
 edxval==1.1.25
-elasticsearch==1.9.0
+elasticsearch==6.3.1
 entrypoints==0.3
 enum34==1.1.6
 event-tracking==0.2.7
