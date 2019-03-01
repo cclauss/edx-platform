@@ -158,7 +158,7 @@ loremipsum==1.0.5
 lxml==3.8.0
 mailsnake==1.6.4
 mako==1.0.2
-markdown==2.6.11
+markdown==3.0.1
 markey==0.8               # via django-babel-underscore
 markupsafe==1.1.0
 maxminddb==1.4.1          # via geoip2
