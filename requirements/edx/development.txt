@@ -252,7 +252,7 @@ pycountry==18.12.8
 pycparser==2.19
 pycryptodomex==3.7.3
 pydispatcher==2.0.5
-pyflakes==2.1.0
+pyflakes==2.1.1
 pygments==2.3.1
 pygraphviz==1.5
 pyhamcrest==1.9.0
