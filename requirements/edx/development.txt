@@ -212,7 +212,7 @@ markey==0.8
 markupsafe==1.1.1
 maxminddb==1.4.1
 mccabe==0.6.1
-mock==1.0.1
+mock==2.0.0
 modernize==0.6.1
 mongoengine==0.10.0
 more-itertools==5.0.0
