@@ -85,7 +85,7 @@ django-mysql==2.4.1
 django-oauth-toolkit==1.2.0
 django-object-actions==1.0.0  # via edx-enterprise
 django-pyfs==2.0
-django-ratelimit-backend==1.1.1
+django-ratelimit-backend==2.0
 django-ratelimit==2.0.0
 django-require==1.0.11
 django-rest-swagger==2.2.0
