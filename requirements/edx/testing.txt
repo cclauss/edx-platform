@@ -251,7 +251,7 @@ pyhamcrest==1.9.0         # via twisted
 pyjwkest==1.4.0
 pyjwt==1.7.1
 pylint-celery==0.3        # via edx-lint
-pylint-django==0.7.2      # via edx-lint
+pylint-django==2.0.6      # via edx-lint
 pylint-plugin-utils==0.5  # via pylint-celery, pylint-django
 pylint==1.7.6             # via edx-lint, pylint-celery, pylint-django
 pymongo==3.7.2
