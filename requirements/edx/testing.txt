@@ -151,7 +151,7 @@ enum34==1.1.6
 event-tracking==0.2.8
 execnet==1.5.0            # via pytest-xdist
 extras==1.0.0             # via python-subunit, testtools
-factory_boy==2.8.1
+factory_boy==2.11.1
 faker==1.0.2              # via factory-boy
 feedparser==5.2.1
 filelock==3.0.10          # via tox
