@@ -58,7 +58,7 @@ backports.functools-lru-cache==1.5
 beautifulsoup4==4.7.1
 before-after==1.0.1
 billiard==3.6.0.0
-bleach==2.1.4
+bleach==3.1.0
 bok-choy==0.9.3
 boto3==1.4.8
 boto==2.39.0
