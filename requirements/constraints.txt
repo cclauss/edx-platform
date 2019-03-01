@@ -9,7 +9,7 @@
 # linking to it here is good.
 
 # These packages are backports which can only be installed on Python 2.7
-functools32 ; python_version == "2.7"
+functools32==3.2.3-2; python_version == "2.7"
 futures ; python_version == "2.7"
 python-openid ; python_version == "2.7"
 
