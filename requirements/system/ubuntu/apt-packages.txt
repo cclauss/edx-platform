@@ -32,7 +32,7 @@ libreadline6-dev
 mongodb
 nodejs==0.1.1
 mysql-client
-virtualenvwrapper
+virtualenvwrapper==4.8.4
 libgeos-ruby1.8
 lynx-cur
 libxmlsec1-dev
