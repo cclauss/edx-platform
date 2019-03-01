@@ -331,7 +331,7 @@ uritemplate==3.0.0
 urllib3==1.24.1
 urlobject==2.4.3          # via pa11ycrawler
 user-util==0.1.5
-virtualenv==16.4.0        # via tox
+virtualenv==16.4.3        # via tox
 voluptuous==0.11.5
 w3lib==1.20.0             # via parsel, scrapy
 watchdog==0.9.0
