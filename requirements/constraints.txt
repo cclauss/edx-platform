@@ -34,4 +34,4 @@ urllib3==1.24.1
 # This causes a test to fail. Before fixing, we would need to make sure mobile apps are functional with this change
 # See https://github.com/oauthlib/oauthlib/issues/264 for more context
 requests-oauthlib==1.2.0
-oauthlib==2.1.0
+oauthlib==3.0.1
