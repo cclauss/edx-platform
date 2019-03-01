@@ -284,7 +284,7 @@ queuelib==1.5.0           # via scrapy
 radon==3.0.1
 redis==2.10.6
 reportlab==3.5.13
-requests-oauthlib==1.1.0
+requests-oauthlib==1.2.0
 requests==2.21.0
 rest-condition==1.0.3
 rfc6266-parser==0.0.5.post2
