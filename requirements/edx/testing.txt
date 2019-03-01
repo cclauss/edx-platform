@@ -312,7 +312,7 @@ splinter==0.10.0
 sqlparse==0.2.4
 stevedore==1.30.0
 sure==1.4.11
-sympy==0.7.1
+sympy==1.3
 testfixtures==6.5.2
 testtools==2.3.0          # via fixtures, python-subunit
 text-unidecode==1.2       # via faker
