@@ -48,7 +48,7 @@ attrs==18.2.0
 babel==2.6.0
 backports.functools-lru-cache==1.5  # via soupsieve
 beautifulsoup4==4.7.1     # via pynliner
-billiard==3.3.0.23        # via celery
+billiard==3.6.0.0        # via celery
 bleach==2.1.4
 boto3==1.4.8
 boto==2.39.0
