@@ -132,7 +132,7 @@ event-tracking==0.2.8
 feedparser==5.2.1
 firebase-token-generator==2.0.1
 fs-s3fs==1.1.0
-fs==2.0.18
+fs==2.4.4
 future==0.17.1            # via pyjwkest
 futures==3.2.0 ; python_version == "2.7"  # via python-swiftclient, s3transfer, xblock-utils
 geoip2==2.9.0
