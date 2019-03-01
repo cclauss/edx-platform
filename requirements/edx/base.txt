@@ -183,7 +183,7 @@ pillow==5.4.1
 pkgconfig==1.4.0          # via xmlsec
 polib==1.1.0              # via edx-i18n-tools
 psutil==5.5.1
-py2neo==3.1.2
+py2neo==4.2.0
 pycontracts==1.7.1
 pycountry==18.12.8
 pycparser==2.19
