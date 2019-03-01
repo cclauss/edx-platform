@@ -49,7 +49,7 @@ babel==2.6.0
 backports.functools-lru-cache==1.5  # via soupsieve
 beautifulsoup4==4.7.1     # via pynliner
 billiard==3.6.0.0        # via celery
-bleach==2.1.4
+bleach==3.1.0
 boto3==1.4.8
 boto==2.39.0
 botocore==1.8.17
