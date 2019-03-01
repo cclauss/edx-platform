@@ -233,7 +233,7 @@ pillow==5.4.1
 pkgconfig==1.4.0
 pluggy==0.8.1             # via pytest, tox
 polib==1.1.0
-psutil==1.2.1
+psutil==5.5.1
 py2neo==3.1.2
 py==1.7.0                 # via pytest, tox
 pyasn1-modules==0.2.4     # via service-identity
