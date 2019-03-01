@@ -44,7 +44,7 @@ anyjson==0.3.3            # via kombu
 appdirs==1.4.3            # via fs
 argh==0.26.2
 asn1crypto==0.24.0
-attrs==17.4.0
+attrs==18.2.0
 babel==1.3
 backports.functools-lru-cache==1.5  # via soupsieve
 beautifulsoup4==4.7.1     # via pynliner
