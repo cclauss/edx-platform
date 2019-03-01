@@ -102,7 +102,7 @@ django-mptt==0.9.1
 django-multi-email-field==0.5.1
 django-mysql==2.4.1
 django-oauth-toolkit==1.2.0
-django-object-actions==0.10.0
+django-object-actions==1.0.0
 django-pyfs==2.0
 django-ratelimit-backend==1.1.1
 django-ratelimit==2.0.0
