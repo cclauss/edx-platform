@@ -51,7 +51,7 @@ beautifulsoup4==4.7.1     # via pynliner
 billiard==3.6.0.0        # via celery
 bleach==3.1.0
 boto3==1.9.105
-boto==2.39.0
+boto==2.49.0
 botocore==1.8.17
 celery==3.1.25
 certifi==2018.11.29
