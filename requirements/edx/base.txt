@@ -191,7 +191,7 @@ pycryptodomex==3.7.3
 pygments==2.3.1
 pygraphviz==1.5
 pyjwkest==1.4.0
-pyjwt==1.5.2
+pyjwt==1.7.1
 pymongo==2.9.1
 pynliner==0.8.0
 pyparsing==2.3.1
