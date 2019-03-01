@@ -82,7 +82,7 @@ ddt==1.2.1
 decorator==4.3.2
 defusedxml==0.5.0
 dicttoxml==1.7.4          # via moto
-diff-cover==0.9.8
+diff-cover==1.0.6
 distlib==0.2.8            # via caniusepython3
 django-appconf==1.0.2
 django-babel-underscore==0.5.2
