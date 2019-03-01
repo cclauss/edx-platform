@@ -147,7 +147,7 @@ ipaddress==1.0.22
 isodate==0.6.0            # via python3-saml
 itypes==1.1.0             # via coreapi
 jinja2==2.10              # via coreschema
-jmespath==0.9.3           # via boto3, botocore
+jmespath==0.9.4           # via boto3, botocore
 jsondiff==1.1.1           # via edx-enterprise
 jsonfield==2.0.2
 kombu==3.0.37             # via celery
