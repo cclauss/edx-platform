@@ -131,7 +131,7 @@ enum34==1.1.6
 event-tracking==0.2.8
 feedparser==5.2.1
 firebase-token-generator==2.0.1
-fs-s3fs==0.1.8
+fs-s3fs==1.1.0
 fs==2.0.18
 future==0.17.1            # via pyjwkest
 futures==3.2.0 ; python_version == "2.7"  # via python-swiftclient, s3transfer, xblock-utils
