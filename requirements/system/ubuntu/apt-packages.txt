@@ -1,5 +1,5 @@
 python-software-properties
-pkg-config
+pkg-config==0.0.1
 gfortran
 libatlas-dev
 libblas-dev
